@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4f6fb" />
+  <meta name="description" content="Discover useful finds and everyday favourites at Nook Market." />
+  <title>Nook Market — Good finds, everyday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="top-strip"><span class="top-spark">✳</span> GOOD FINDS. NO FUSS. <span class="top-message">A LITTLE SOMETHING FOR EVERY DAY <b>↗</b></span></div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Nook Market home"><span class="brand-icon">n</span><span>nook<span>market</span></span></a>
+    <nav aria-label="Main navigation"><a class="active" href="#shop">Discover</a><a href="#about">About us</a></nav>
+    <a class="header-link" href="#shop">Browse all <span>↘</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-kicker"><span></span> YOUR EVERYDAY DISCOVERY STORE</div>
+        <h1>Little things.<br><em>Big good</em> energy.</h1>
+        <p class="hero-text">Useful pieces, clever essentials and new favourites. Find something that makes your everyday a little better.</p>
+        <a class="hero-button" href="#shop">Explore the collection <span>↗</span></a>
+        <div class="hero-foot"><b>01 / 04</b><span>THE GOOD STUFF STARTS HERE</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="art-circle circle-one"></div><div class="art-circle circle-two"></div>
+        <div class="art-label label-top">FRESH FINDS<br/>FOR EVERYDAY</div>
+        <div class="art-card card-back"></div>
+        <div class="art-card card-front"><span class="card-sun">✳</span><small>THE NOOK EDIT</small><strong>Find<br/>your<br/><em>happy.</em></strong><span class="card-bottom">OBJECTS FOR A GOOD DAY ↗</span></div>
+        <div class="art-sticker">GOOD<br/>CHOICE!</div>
+        <div class="art-label label-bottom">CURATED WITH<br/>A LITTLE JOY.</div>
+      </div>
+      <div class="hero-side-note">A BRIGHTER KIND OF BROWSE — EST. 2026</div>
+    </section>
+
+    <section class="benefits">
+      <div><span class="benefit-number">01</span><p><b>Everyday discoveries</b><small>Fresh finds worth a look</small></p></div>
+      <div><span class="benefit-number">02</span><p><b>Easy browsing</b><small>Find what you need, fast</small></p></div>
+      <div><span class="benefit-number">03</span><p><b>Good value</b><small>Little wins for your day</small></p></div>
+      <div class="benefit-aside">STAY CURIOUS <span>✳</span></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="shop-heading">
+        <div><div class="section-kicker">THE NOOK CATALOGUE <span>✳</span></div><h2>Find your next<br/><em>favourite thing.</em></h2></div>
+        <p class="shop-intro">Scroll a little. Discover a lot. Your next everyday essential might be right here.</p>
+      </div>
+      <div class="toolbar">
+        <label class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search the good stuff…" maxlength="100" /><kbd>⌘ K</kbd></label>
+        <div class="toolbar-controls">
+          <label class="filter-label"><span>SHOP BY</span><select id="category"><option value="">All categories</option></select></label>
+          <label class="filter-label"><span>ORDER BY</span><select id="sort"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name: A to Z</option><option value="newest">Newest first</option></select></label>
+        </div>
+      </div>
+      <div class="catalogue-meta"><span id="result-count">Loading products…</span><span>HANDPICKED FOR YOUR EVERYDAY <b>✳</b></span></div>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      <div class="collection-footer"><span>THAT'S A PRETTY GOOD COLLECTION.</span><span>KEEP EXPLORING <b>↗</b></span></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-symbol">n.</div>
+      <div class="about-title"><div class="section-kicker">A NOTE FROM NOOK</div><h2>Good things<br/>belong in <em>everyday.</em></h2></div>
+      <p>We think finding useful, lovely things should feel simple. Nook Market brings everyday discoveries together in one easy place — so you can spend less time looking and more time enjoying the little things.</p>
+      <div class="about-badge">KEEP<br/>IT<br/><b>GOOD</b> ✳</div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="/"><span class="brand-icon">n</span><span>nook<span>market</span></span></a><p>Good finds for all the in-between moments.</p><span>© 2026 NOOK MARKET · FULL-STACK LAB PROJECT</span></footer>
+
+  <div class="modal-backdrop" id="modal" hidden><section class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Close product details">×</button><div id="modal-content"></div></section></div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
